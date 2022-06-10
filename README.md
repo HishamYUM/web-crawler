@@ -1,28 +1,28 @@
-Ce programme est un crawler qui permet de parcourir un lien et extracter des informations. <br />
-Le programme est utilisable en ligne de commande et proposer les fonctionnalités suivantes :<br />
-<br />
-Retourner un rapport dans le terminal<br />
-$ crawler [--url|u] https://example.net<br />
-<br />
-Retourner un rapport dans un fichier passé en paramètre<br />
-$ crawler [--url|u] https://example.net [--export] nom_fichier<br />
-<br />
-Le rapport généré est au format texte et contient les informations suivantes :<br />
-<br />
-Le nombre d'URL unique<br />
-Les URL's pointant sur le même domaine<br />
-Les adresses pointant sur un domaine externe<br />
-Les adresses contenant des formulaires (tout formulaire confondu)<br />
-Les adresses contenant des pages protégés par mot de passe<br />
-Le nombre d'adresse pointant sur le même nom de domaine renvoyant une page 404<br />
-<br />
-Le mode d'utilations est comme suit:<br />
-<br />
-Retourner uniquement les pages retournant un code erreur 404<br />
-$ crawler [--url|u] https://example.net --404<br />
-<br />
-Retourner uniquement les adresses pointant vers un nom de domaine externe<br />
-$ crawler [--url|u] https://example.net --external-url<br />
-<br />
-Retourner uniquement les pages nécessitant une authentification<br />
-$ crawler [--url|u] https://example.net --protected_url<br /><br />
+# Web Crawler
+This program is a crawler that allows you to browse a link and extract information. <br />
+The program can be used on the command line and offers the following features: <br /> <br />
+Return a report in the terminal <br />
+$crawler [--url|u] https://example.net
+ <br /> <br />
+Return a report in a file passed as a parameter <br />
+$ crawler [--url|u] https://example.net [--export] filename
+ <br /> <br />
+The generated report is in text format and contains the following information: <br />
+The number of unique URLs <br />
+URLs pointing to the same domain <br />
+Addresses pointing to an external domain <br />
+Addresses containing forms (all forms combined) <br />
+Addresses containing password-protected pages<br <br />
+The number of addresses pointing to the same domain name returning a 404 page <br /> <br />
+
+The mode of use is as follows: <br /> <br />
+
+Return only pages returning a 404 error code <br />
+$crawler [--url|u] https://example.net --404 <br /> <br />
+
+Return only addresses pointing to an external domain name <br />
+$crawler [--url|u] https://example.net --external-url <br /> <br />
+
+Return only pages requiring authentication <br />
+$ crawler [--url|u] https://example.net --protected_url <br />
+
